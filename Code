@@ -1,1 +1,33 @@
 
+package Abstract;
+
+public class Circle extends GemetricObject {
+
+    private double radius;
+
+    public Circle() {
+
+    }
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+
+    public double getRadius() {
+        return radius;
+    }
+
+    @Override
+    double getArea() {
+        double Area = (radius * radius * Math.PI);
+        return Area; 
+    }
+    public void printing () {
+        System.out.println("The area of Circle = "+ radius);
+    }
+
+}
